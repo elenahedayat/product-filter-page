@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Elena💫</a>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Shop</a>
+        </nav>
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-toggle">
+            <label for="theme-toggle" class="toggle">
+                <span class="toggle-icon sun">☀</span>
+                <span class="toggle-icon moon">☾</span>
+                <span class="toggle-circle"></span>
+            </label>
+        </div>
+    </header>
+    <div class="page">
+        <button type="button" class="filter-toggle" id="filter-toggle">Filter</button>
+        <aside id="sidebar" class="sidebar">
+            <header class="sidebar_header">
+                <h2>Filter</h2>
+                <button type="button" class="close-filter" id="close-filter">x</button>
+            </header>
+            <form action="#">
+                <fieldset>
+                    <legend>Category</legend>
+                    <label><input type="checkbox" name="category" value="classic"> Classic</label>
+                    <label><input type="checkbox" name="category" value="smart"> Smart</label>
+                    <label><input type="checkbox" name="category" value="sport"> Sport</label>
+                    <label><input type="checkbox" name="category" value="luxury"> Luxury</label>
+                    <label><input type="checkbox" name="category" value="chronograph"> Chronograph</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Strap</legend>
+                    <label><input type="checkbox" name="strap" value="leather"> Leather</label>
+                    <label><input type="checkbox" name="strap" value="stainless"> Stainless Steel</label>
+                    <label><input type="checkbox" name="strap" value="silicone"> Silicone</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Color</legend>
+                    <label><input type="checkbox" name="color" value="black"> Black</label>
+                    <label><input type="checkbox" name="color" value="silver"> Silver</label>
+                    <label><input type="checkbox" name="color" value="gold"> Gold</label>
+                    <label><input type="checkbox" name="color" value="brown"> Brown</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Price</legend>
+                    <label><input type="checkbox" name="price" value="under-100">Under $100</label>
+                    <label><input type="checkbox" name="price" value="100-199">$100 – $199</label>
+                    <label><input type="checkbox" name="price" value="200-399">$200 – $399</label>
+                    <label><input type="checkbox" name="price" value="Over-400">Over $400</label>      
+                </fieldset>
+
+            </form>
+        </aside>
+
+        <main class="content">
+            <header class="content-header">
+                <span class="number-resault">12 Resault</span>
+                <select name="sort" id="sort" class="sort">
+                    <option value="best">Best Seller</option>
+                    <option value="low">Low to High Price</option>
+                    <option value="high">High to Low Price</option>
+                </select>
+            </header>
+            <section class="product" id="product"></section>
+            <p class="empty" id="empty" hidden>No products found :( </p>
+        </main>
+    </div>
+    <div class="overlay" id="overlay" hidden></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
