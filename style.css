@@ -6,7 +6,6 @@
 :root{
     --bg: #F5F3EF;
     --text: #222222;
-    /* --logo: #D4A373; */
     --logo:rgba(230, 178, 124, 0.83);
     --nav:rgb(78, 73, 73);
     --border: #e8e4df;
@@ -172,6 +171,7 @@ header{
     font-size: 0.9rem;
     cursor: pointer;
     margin-bottom: 16px;
+    color: var(--text);
 }
 .filter-toggle::before{
     content: "☰";
@@ -195,10 +195,7 @@ header{
     z-index: 50;
     transform: translateX(-105%);
     transition: transform 0.3s ease;
-    /* overflow-y: hidden; */
-    /* box-shadow: 4px 0px 24px; */
     box-shadow: 5px 0 25px rgba(0, 0, 0, 0.1);
-    /* border-radius: 20px; */
     border-radius: 0 20px 20px 0;
     
 }
@@ -209,11 +206,11 @@ header{
 .close-filter{
     display: block;
 }
- .sidebar_header {
+.sidebar_header {
     margin-bottom: 20px;
     padding: 0;
-    color: var(--text);
 }
+
 
 .close-filter{
     display: none;
@@ -364,16 +361,7 @@ legend{
   background: var(--badge-background)
 
 }
-/* 
-.badge.new {
-  background: var(--filter-background);
-  color: var(--logo);
-}
 
-.badge.sale {
-  background: var(--filter-background);
-  color: var(--logo);
-} */
 
 .card-body {
   padding: 10px 10px 12px;
