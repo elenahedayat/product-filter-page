@@ -212,6 +212,7 @@ header{
  .sidebar_header {
     margin-bottom: 20px;
     padding: 0;
+    color: var(--text);
 }
 
 .close-filter{
